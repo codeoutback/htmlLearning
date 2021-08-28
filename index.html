@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: bisque;">
     <table border="1">
+
+        <div style="resize: horizontal; width: 300px;": horizontal><h1 style="background-color: rgb(245, 206, 32); text-align: center;">Soup Delivery</h1></div>
+
         <!-- tr are Table Rows-->
         <tr>
             <!--th is table header (They are bold and the text get centered)-->
@@ -27,8 +30,14 @@
     </table>
 
     <form action="">
-        <p>Name:</p><input type="text" placeholder="Enter your name">
-        <p>Password:</p><input type="password" placeholder="Enter your password">
+        <p>Name:</p><input type="text" placeholder="Enter your name" 
+        name="name">
+        <p>Password:</p><input type="password" placeholder="Enter your password" 
+        name="password" required>
+        <p>Email:</p><input type="email" name="email" placeholder="example@example.com" required>
+        <!--Specifying specific format-->
+        <p>Phone:</p><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format 555-555-5555"
+        placeholder="777-777-7777">
         <input type="submit">
     </form>
 </body>
